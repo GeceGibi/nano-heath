@@ -18,14 +18,11 @@ class UserRepo {
 
     Globals.pc.read(userPod.notifier).login(user);
 
-    Storage.instance.setJson(StorageKeys.user_info, jsonEncode(user.toJson()));
-    Storage.instance.setJson(
-      StorageKeys.auth_data,
-      jsonEncode({
-        'username': username,
-        'password': password,
-      }),
-    );
+    Storage.instance.setJson(StorageKeys.user_info, user.toJson());
+    Storage.instance.setJson(StorageKeys.auth_data, {
+      'username': username,
+      'password': password,
+    });
 
     return user;
   }

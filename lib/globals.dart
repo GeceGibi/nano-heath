@@ -1,6 +1,6 @@
 import 'package:fetch/fetch.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nano/pods/user.dart';
+import 'package:nano/pods/pods.dart';
 
 abstract class Globals {
   ///

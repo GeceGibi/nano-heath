@@ -48,9 +48,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
 
             return Column(
               children: [
-                SizedBox(
-                  height: mediaQuery.padding.top + kToolbarHeight,
-                ),
+                SizedBox(height: mediaQuery.padding.top + kToolbarHeight),
                 Expanded(child: AdaptiveImage(product!.image)),
                 AnimatedSize(
                   duration: const Duration(milliseconds: 350),
@@ -91,6 +89,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               GestureDetector(
+                                behavior: HitTestBehavior.opaque,
                                 onTap: () {
                                   setState(() {
                                     isOpenCard = !isOpenCard;
