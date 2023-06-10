@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nano/components.dart/components.dart';
-import 'package:nano/constants.dart';
 import 'package:nano/models/product.dart';
 import 'package:nano/repos/repos.dart';
 

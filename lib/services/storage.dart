@@ -40,6 +40,5 @@ class Storage {
 
   Future<void> init() async {
     preferences = await SharedPreferences.getInstance();
-    preferences.clear();
   }
 }
